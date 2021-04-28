@@ -1,0 +1,14 @@
+[package]
+name = "figma-to-react"
+version = "0.1.0"
+authors = ["Andrew Vy <andrew@andrewvy.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+structopt = "0.3"
+async-std = { version = "1.9.0", features = ["attributes"] }
+anyhow = "1.0.40"
+serde_json = "1.0"
+figma-api = { path = "../figma-api" }

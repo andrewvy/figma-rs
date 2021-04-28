@@ -1,0 +1,6 @@
+[workspace]
+
+members = [
+    "figma-to-react",
+    "figma-api"
+]
