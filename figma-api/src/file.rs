@@ -328,11 +328,11 @@ pub struct ExportSetting {
 #[derive(Deserialize, Debug)]
 #[serde(rename_all = "camelCase")]
 pub struct BaseNode {
-    id: String,
-    name: String,
+    pub id: String,
+    pub name: String,
     #[serde(default = "bool::default")]
-    visible: bool,
-    plugin_data: Option<Value>,
+    pub visible: bool,
+    pub plugin_data: Option<Value>,
 }
 
 #[derive(Deserialize, Debug)]
@@ -454,12 +454,12 @@ pub struct Style {
 #[derive(Deserialize, Debug)]
 #[serde(rename_all = "camelCase")]
 pub struct File {
-    name: String,
+    pub name: String,
     role: String,
     last_modified: String,
     thumbnail_url: String,
     version: String,
-    document: Node,
+    pub document: Node,
     components: HashMap<String, Component>,
     schema_version: i32,
 }
